@@ -1,8 +1,10 @@
+from collections import defaultdict
+
 from Ship import Ship
 from Particle import Particle, NORMAL_FADE, RAINBOW_FADE, RAINBOW_RAND
 
 #track keys pressed
-ks = [False for _ in range(256)]
+ks = defaultdict(bool)
 
 #mapping from keys z, x, c to particle modes
 modes = dict(zip(map(ord, "ZXC"), [NORMAL_FADE, RAINBOW_FADE, RAINBOW_RAND]))
