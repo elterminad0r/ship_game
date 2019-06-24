@@ -1,3 +1,5 @@
+# vim: ft=python
+
 from collections import defaultdict
 
 from Ship import Ship
